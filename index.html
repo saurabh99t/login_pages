@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login and Registration Page</title>
+    <style>
+      /* Page styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        margin-top: 150px;
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 96%;
+
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .btn {
+        display: block;
+        width: 25%;
+        padding: 10px;
+        background-color: #021B79;
+  color: white;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+
+      .btn:hover {
+        background-color: #021454;
+      }
+
+      .message {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .message a {
+        color: #021B79;
+        text-decoration: none;
+      }
+
+      /* Responsive layout */
+      @media screen and (max-width: 480px) {
+        .container {
+          width: 90%;
+          margin-top: 180px;
+          padding: 20px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        body {
+          padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+          width: 93%;
+
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <input type="submit" class="btn" value="Login" />
+        <div class="message">
+          Don't have an account?
+          <a href="#" onclick="window.location.href='index.html';">Register</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
